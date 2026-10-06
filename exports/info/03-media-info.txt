@@ -1,0 +1,20 @@
+Media Info
+==========
+
+Media was taken from attachment URLs and upload links inside the XML,
+then downloaded from https://waqfehsan.org.sa into media/uploads/.
+
+Attachment records: 342
+Unique download targets: 954
+Saved locally: 342
+
+Folder layout:
+media/uploads/YYYY/MM/filename.ext
+
+Download statuses:
+- exists: 653
+- http_404: 54
+- downloaded: 247
+
+Excel inventory: exports/excel/06-attachments.xlsx
+JSON report: exports/json/download-report.json

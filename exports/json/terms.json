@@ -1,0 +1,835 @@
+[
+  {
+    "id": "176",
+    "taxonomy": "pa_اختر-مصحف",
+    "slug": "10-مصاحف",
+    "parent": "",
+    "name": "10 مصاحف"
+  },
+  {
+    "id": "139",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "10-وجبات",
+    "parent": "",
+    "name": "10 وجبات"
+  },
+  {
+    "id": "142",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "100-وجبة",
+    "parent": "",
+    "name": "100 وجبة"
+  },
+  {
+    "id": "140",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "20-وجبة",
+    "parent": "",
+    "name": "20 وجبة"
+  },
+  {
+    "id": "136",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "3-سفر-كاملة-كل-يوم-سفرة-مع-توثيقها-بالاس",
+    "parent": "",
+    "name": "3 سفر كاملة ( كل يوم سفرة) مع توثيقها بالاسم"
+  },
+  {
+    "id": "132",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "3-وجبات-عنك",
+    "parent": "",
+    "name": "3 وجبات عنك"
+  },
+  {
+    "id": "175",
+    "taxonomy": "pa_اختر-مصحف",
+    "slug": "4-مصاحف",
+    "parent": "",
+    "name": "4 مصاحف"
+  },
+  {
+    "id": "138",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "5-وجبات",
+    "parent": "",
+    "name": "5 وجبات"
+  },
+  {
+    "id": "177",
+    "taxonomy": "pa_اختر-مصحف",
+    "slug": "50-مصحف",
+    "parent": "",
+    "name": "50 مصحف"
+  },
+  {
+    "id": "141",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "50-وجبة",
+    "parent": "",
+    "name": "50 وجبة"
+  },
+  {
+    "id": "133",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "6-وجبات-عنك-ووالديك",
+    "parent": "",
+    "name": "6 وجبات عنك ووالديك"
+  },
+  {
+    "id": "134",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "9-وجبات-عنك-ووالديك-وأسرتك",
+    "parent": "",
+    "name": "9 وجبات عنك ووالديك وأسرتك"
+  },
+  {
+    "id": "7",
+    "taxonomy": "product_visibility",
+    "slug": "exclude-from-catalog",
+    "parent": "",
+    "name": "exclude-from-catalog"
+  },
+  {
+    "id": "6",
+    "taxonomy": "product_visibility",
+    "slug": "exclude-from-search",
+    "parent": "",
+    "name": "exclude-from-search"
+  },
+  {
+    "id": "5",
+    "taxonomy": "product_type",
+    "slug": "external",
+    "parent": "",
+    "name": "external"
+  },
+  {
+    "id": "8",
+    "taxonomy": "product_visibility",
+    "slug": "featured",
+    "parent": "",
+    "name": "featured"
+  },
+  {
+    "id": "93",
+    "taxonomy": "elementor_library_type",
+    "slug": "floating-buttons",
+    "parent": "",
+    "name": "floating-buttons"
+  },
+  {
+    "id": "3",
+    "taxonomy": "product_type",
+    "slug": "grouped",
+    "parent": "",
+    "name": "grouped"
+  },
+  {
+    "id": "95",
+    "taxonomy": "elementor_library_type",
+    "slug": "loop-item",
+    "parent": "",
+    "name": "loop-item"
+  },
+  {
+    "id": "9",
+    "taxonomy": "product_visibility",
+    "slug": "outofstock",
+    "parent": "",
+    "name": "outofstock"
+  },
+  {
+    "id": "80",
+    "taxonomy": "elementor_library_type",
+    "slug": "page",
+    "parent": "",
+    "name": "page"
+  },
+  {
+    "id": "92",
+    "taxonomy": "elementor_library_type",
+    "slug": "popup",
+    "parent": "",
+    "name": "popup"
+  },
+  {
+    "id": "94",
+    "taxonomy": "elementor_library_type",
+    "slug": "product-archive",
+    "parent": "",
+    "name": "product-archive"
+  },
+  {
+    "id": "10",
+    "taxonomy": "product_visibility",
+    "slug": "rated-1",
+    "parent": "",
+    "name": "rated-1"
+  },
+  {
+    "id": "11",
+    "taxonomy": "product_visibility",
+    "slug": "rated-2",
+    "parent": "",
+    "name": "rated-2"
+  },
+  {
+    "id": "12",
+    "taxonomy": "product_visibility",
+    "slug": "rated-3",
+    "parent": "",
+    "name": "rated-3"
+  },
+  {
+    "id": "13",
+    "taxonomy": "product_visibility",
+    "slug": "rated-4",
+    "parent": "",
+    "name": "rated-4"
+  },
+  {
+    "id": "14",
+    "taxonomy": "product_visibility",
+    "slug": "rated-5",
+    "parent": "",
+    "name": "rated-5"
+  },
+  {
+    "id": "2",
+    "taxonomy": "product_type",
+    "slug": "simple",
+    "parent": "",
+    "name": "simple"
+  },
+  {
+    "id": "129",
+    "taxonomy": "wd_popup_cat",
+    "slug": "uncategorized",
+    "parent": "",
+    "name": "Uncategorized"
+  },
+  {
+    "id": "130",
+    "taxonomy": "wd_floating_block_cat",
+    "slug": "uncategorized",
+    "parent": "",
+    "name": "Uncategorized"
+  },
+  {
+    "id": "131",
+    "taxonomy": "cms_block_cat",
+    "slug": "uncategorized",
+    "parent": "",
+    "name": "Uncategorized"
+  },
+  {
+    "id": "15",
+    "taxonomy": "product_cat",
+    "slug": "uncategorized",
+    "parent": "",
+    "name": "Uncategorized"
+  },
+  {
+    "id": "4",
+    "taxonomy": "product_type",
+    "slug": "variable",
+    "parent": "",
+    "name": "variable"
+  },
+  {
+    "id": "67",
+    "taxonomy": "woodmart_slider",
+    "slug": "vegetables-slider",
+    "parent": "",
+    "name": "Vegetables slider"
+  },
+  {
+    "id": "150",
+    "taxonomy": "product_cat",
+    "slug": "أضاحي",
+    "parent": "",
+    "name": "أضاحي"
+  },
+  {
+    "id": "181",
+    "taxonomy": "pa_إطعام",
+    "slug": "إطعام-المسكين-الواحد",
+    "parent": "",
+    "name": "إطعام المسكين الواحد"
+  },
+  {
+    "id": "185",
+    "taxonomy": "product_cat",
+    "slug": "إطعام-كفارة",
+    "parent": "",
+    "name": "إطعام كفارة"
+  },
+  {
+    "id": "145",
+    "taxonomy": "pa_اختر-عدد",
+    "slug": "سقيا-120-ضيف-للرحمن",
+    "parent": "",
+    "name": "اسق120 معتمرا"
+  },
+  {
+    "id": "146",
+    "taxonomy": "pa_اختر-عدد",
+    "slug": "سقيا-160-ضيف-للرحمن",
+    "parent": "",
+    "name": "اسق160 معتمرا"
+  },
+  {
+    "id": "149",
+    "taxonomy": "pa_اختر-عدد",
+    "slug": "سقيا-1600ضيف-للرحمن",
+    "parent": "",
+    "name": "اسق1600 معتمرا"
+  },
+  {
+    "id": "147",
+    "taxonomy": "pa_اختر-عدد",
+    "slug": "سقيا-320-ضيف-للرحمن",
+    "parent": "",
+    "name": "اسق320 معتمرا"
+  },
+  {
+    "id": "143",
+    "taxonomy": "pa_اختر-عدد",
+    "slug": "سقيا-40-ضيف",
+    "parent": "",
+    "name": "اسق40 معتمرا"
+  },
+  {
+    "id": "148",
+    "taxonomy": "pa_اختر-عدد",
+    "slug": "سقيا-640-ضيف-للرحمن",
+    "parent": "",
+    "name": "اسق640 معتمرا"
+  },
+  {
+    "id": "144",
+    "taxonomy": "pa_اختر-عدد",
+    "slug": "سقيا-80-ضيف",
+    "parent": "",
+    "name": "اسق80 معتمرا"
+  },
+  {
+    "id": "128",
+    "taxonomy": "product_cat",
+    "slug": "افطار-وسقيا",
+    "parent": "",
+    "name": "افطار وسقيا"
+  },
+  {
+    "id": "97",
+    "taxonomy": "product_cat",
+    "slug": "breakfast",
+    "parent": "",
+    "name": "الإفطار"
+  },
+  {
+    "id": "158",
+    "taxonomy": "product_cat",
+    "slug": "الافطار-والسقيا",
+    "parent": "",
+    "name": "الافطار-والسقيا"
+  },
+  {
+    "id": "102",
+    "taxonomy": "product_cat",
+    "slug": "الاهداءات",
+    "parent": "",
+    "name": "الاهداءات"
+  },
+  {
+    "id": "98",
+    "taxonomy": "product_cat",
+    "slug": "watering",
+    "parent": "",
+    "name": "السقيا"
+  },
+  {
+    "id": "183",
+    "taxonomy": "pa_إطعام",
+    "slug": "الظهار-أو-الجماع-بنهار-رمضان-60-مسكين",
+    "parent": "",
+    "name": "الظهار أو الجماع بنهار رمضان: 60 مسكين"
+  },
+  {
+    "id": "101",
+    "taxonomy": "product_cat",
+    "slug": "العربات",
+    "parent": "",
+    "name": "العربات"
+  },
+  {
+    "id": "100",
+    "taxonomy": "product_cat",
+    "slug": "المصاحف",
+    "parent": "",
+    "name": "المصاحف"
+  },
+  {
+    "id": "160",
+    "taxonomy": "product_cat",
+    "slug": "المصاحف-والوقف",
+    "parent": "",
+    "name": "المصاحف والوقف"
+  },
+  {
+    "id": "184",
+    "taxonomy": "pa_إطعام",
+    "slug": "النذر-أو-اليمين-10-مساكين",
+    "parent": "",
+    "name": "النذر أو اليمين: 10 مساكين"
+  },
+  {
+    "id": "193",
+    "taxonomy": "product_cat",
+    "slug": "الهدي-والكفارات",
+    "parent": "",
+    "name": "الهدي والكفارات"
+  },
+  {
+    "id": "121",
+    "taxonomy": "product_cat",
+    "slug": "اهداءت",
+    "parent": "",
+    "name": "اهداءت"
+  },
+  {
+    "id": "155",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "تكلفة-الإيواء-كاملة",
+    "parent": "",
+    "name": "تكلفة الإيواء كاملة"
+  },
+  {
+    "id": "192",
+    "taxonomy": "product_cat",
+    "slug": "خدمات-ضيوف-الرحمن",
+    "parent": "",
+    "name": "خدمات ضيوف الرحمن"
+  },
+  {
+    "id": "165",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "رعاية-جزئية",
+    "parent": "",
+    "name": "رعاية جزئية"
+  },
+  {
+    "id": "166",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "رعاية-كاملة",
+    "parent": "",
+    "name": "رعاية كاملة"
+  },
+  {
+    "id": "135",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "سفرة-كاملة-ل-100-صائم-يوم-عاشوراء-مع-توثيق",
+    "parent": "",
+    "name": "سفرة كاملة ل 100 صائم يوم عاشوراء مع توثيقها بالاسم"
+  },
+  {
+    "id": "119",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-10-حاج",
+    "parent": "",
+    "name": "سقيا 10 حاج"
+  },
+  {
+    "id": "110",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-10-حجاج-في-كل-يوم-من-عشر-ذي-الحجة",
+    "parent": "",
+    "name": "سقيا 10 حجاج في كل يوم من عشر ذي الحجة"
+  },
+  {
+    "id": "117",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-100-ألف-حاج",
+    "parent": "",
+    "name": "سقيا 100 ألف حاج"
+  },
+  {
+    "id": "112",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-100-حاج-في-كل-يوم-من-عشر-ذي-الحجة",
+    "parent": "",
+    "name": "سقيا 100 حاج في كل يوم من عشر ذي الحجة"
+  },
+  {
+    "id": "114",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-100-حاج-يوم-عرفة-فقط",
+    "parent": "",
+    "name": "سقيا 100 حاج يوم عرفة فقط"
+  },
+  {
+    "id": "116",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-1000-حاج",
+    "parent": "",
+    "name": "سقيا 1000 حاج"
+  },
+  {
+    "id": "118",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-10000حاج",
+    "parent": "",
+    "name": "سقيا 10000حاج"
+  },
+  {
+    "id": "107",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-100حاج",
+    "parent": "",
+    "name": "سقيا 100حاج"
+  },
+  {
+    "id": "111",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-20-حاج-في-كل-يوم-من-عشر-ذي-الحجة",
+    "parent": "",
+    "name": "سقيا 20 حاج في كل يوم من عشر ذي الحجة"
+  },
+  {
+    "id": "108",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-200حاج",
+    "parent": "",
+    "name": "سقيا 200حاج"
+  },
+  {
+    "id": "106",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-50-حاج",
+    "parent": "",
+    "name": "سقيا 50 حاج"
+  },
+  {
+    "id": "115",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-50-حاج-يوم-عرفة-فقط",
+    "parent": "",
+    "name": "سقيا 50 حاج يوم عرفة فقط"
+  },
+  {
+    "id": "120",
+    "taxonomy": "product_cat",
+    "slug": "سقيا-الحاج",
+    "parent": "",
+    "name": "سقيا الحاج"
+  },
+  {
+    "id": "103",
+    "taxonomy": "product_tag",
+    "slug": "سقيا-الحج",
+    "parent": "",
+    "name": "سقيا الحج"
+  },
+  {
+    "id": "113",
+    "taxonomy": "pa_اختر-العدد",
+    "slug": "سقيا-الحجاج-يوم-عرفة-فقط-10-ريال",
+    "parent": "",
+    "name": "سقيا الحجاج يوم عرفة فقط ( 10 ريال)"
+  },
+  {
+    "id": "189",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-الأسرة",
+    "parent": "",
+    "name": "سهم الأسرة"
+  },
+  {
+    "id": "163",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "سهم-الإحسان",
+    "parent": "",
+    "name": "سهم الإحسان"
+  },
+  {
+    "id": "190",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-الاحسان",
+    "parent": "",
+    "name": "سهم الاحسان"
+  },
+  {
+    "id": "124",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-البر",
+    "parent": "",
+    "name": "سهم البر: أفضل صدقة لوالديك."
+  },
+  {
+    "id": "123",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-البركة",
+    "parent": "",
+    "name": "سهم البركة: بركة الحرم في مالك وأهلك."
+  },
+  {
+    "id": "191",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-الجود",
+    "parent": "",
+    "name": "سهم الجود"
+  },
+  {
+    "id": "161",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "سهم-الرحمة",
+    "parent": "",
+    "name": "سهم الرحمة"
+  },
+  {
+    "id": "125",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-السابقين",
+    "parent": "",
+    "name": "سهم السابقين: سباق إلى الخيرات."
+  },
+  {
+    "id": "162",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "سهم-العلاج",
+    "parent": "",
+    "name": "سهم العلاج"
+  },
+  {
+    "id": "187",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-الفرد",
+    "parent": "",
+    "name": "سهم الفرد"
+  },
+  {
+    "id": "126",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-المحسنين",
+    "parent": "",
+    "name": "سهم المحسنين: إحسانٌ يدوم مدى الحياة ."
+  },
+  {
+    "id": "164",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "سهم-المشاركة",
+    "parent": "",
+    "name": "سهم المشاركة"
+  },
+  {
+    "id": "127",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-المقنطرين",
+    "parent": "",
+    "name": "سهم المقنطرين: أعظم غنيمة وأجر مضاعف لا ينقطع."
+  },
+  {
+    "id": "188",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-الوالدين",
+    "parent": "",
+    "name": "سهم الوالدين"
+  },
+  {
+    "id": "152",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-عنك",
+    "parent": "",
+    "name": "سهم عنك"
+  },
+  {
+    "id": "178",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "سهم-عنك",
+    "parent": "",
+    "name": "سهم عنك"
+  },
+  {
+    "id": "153",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-عنك-وعن-والديك",
+    "parent": "",
+    "name": "سهم عنك وعن والديك"
+  },
+  {
+    "id": "154",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "سهم-عنك-وعن-والديك-واسرتك",
+    "parent": "",
+    "name": "سهم عنك وعن والديك واسرتك"
+  },
+  {
+    "id": "173",
+    "taxonomy": "pa_اختر-مصحف",
+    "slug": "سهم-مشاركة",
+    "parent": "",
+    "name": "سهم مشاركة"
+  },
+  {
+    "id": "182",
+    "taxonomy": "pa_إطعام",
+    "slug": "صيام-رمضان-إطعام-مسكين-عن-كل-يوم",
+    "parent": "",
+    "name": "صيام رمضان :إطعام مسكين عن كل يوم"
+  },
+  {
+    "id": "186",
+    "taxonomy": "pa_اختر-السهم",
+    "slug": "عربة-كاملة",
+    "parent": "",
+    "name": "عربة كاملة"
+  },
+  {
+    "id": "156",
+    "taxonomy": "product_cat",
+    "slug": "علاج-الإدمان",
+    "parent": "",
+    "name": "علاج الإدمان"
+  },
+  {
+    "id": "151",
+    "taxonomy": "product_cat",
+    "slug": "عمرة",
+    "parent": "",
+    "name": "عمرة"
+  },
+  {
+    "id": "179",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "عن-والديك",
+    "parent": "",
+    "name": "عن والديك"
+  },
+  {
+    "id": "180",
+    "taxonomy": "pa_اختر-وجبة",
+    "slug": "عنك-وعن-والديك",
+    "parent": "",
+    "name": "عنك وعن والديك"
+  },
+  {
+    "id": "170",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "فطر-12-صائم",
+    "parent": "",
+    "name": "فطر 12 صائم"
+  },
+  {
+    "id": "171",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "فطر-24-صائم",
+    "parent": "",
+    "name": "فطر 24 صائم"
+  },
+  {
+    "id": "168",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "فطر-3-صائمين",
+    "parent": "",
+    "name": "فطر 3 صائمين"
+  },
+  {
+    "id": "172",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "فطر-48-صائم",
+    "parent": "",
+    "name": "فطر 48 صائم"
+  },
+  {
+    "id": "169",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "فطر-6-صائمين",
+    "parent": "",
+    "name": "فطر 6 صائمين"
+  },
+  {
+    "id": "167",
+    "taxonomy": "pa_اختر-سهم",
+    "slug": "فَطِّر-صائم",
+    "parent": "",
+    "name": "فَطِّر صائم"
+  },
+  {
+    "id": "159",
+    "taxonomy": "product_cat",
+    "slug": "متنوع",
+    "parent": "",
+    "name": "متنوع"
+  },
+  {
+    "id": "174",
+    "taxonomy": "pa_اختر-مصحف",
+    "slug": "مصحف-واحد",
+    "parent": "",
+    "name": "مصحف واحد"
+  },
+  {
+    "id": "122",
+    "taxonomy": "product_cat",
+    "slug": "وقف-احسان",
+    "parent": "",
+    "name": "وقف احسان"
+  },
+  {
+    "id": "68",
+    "taxonomy": "",
+    "slug": "all-categories-vegetables",
+    "parent": "",
+    "name": "All categories Vegetables"
+  },
+  {
+    "id": "69",
+    "taxonomy": "",
+    "slug": "footer-menu",
+    "parent": "",
+    "name": "Footer menu"
+  },
+  {
+    "id": "70",
+    "taxonomy": "",
+    "slug": "header-top-bar-left-vegetables",
+    "parent": "",
+    "name": "Header top bar left Vegetables"
+  },
+  {
+    "id": "71",
+    "taxonomy": "",
+    "slug": "header-top-bar-right-vegetables",
+    "parent": "",
+    "name": "Header top bar right Vegetables"
+  },
+  {
+    "id": "72",
+    "taxonomy": "",
+    "slug": "main-header-menu-vegetables",
+    "parent": "",
+    "name": "Main header menu Vegetables"
+  },
+  {
+    "id": "73",
+    "taxonomy": "",
+    "slug": "main-navigation",
+    "parent": "",
+    "name": "Main navigation"
+  },
+  {
+    "id": "74",
+    "taxonomy": "",
+    "slug": "mobile-category-menu",
+    "parent": "",
+    "name": "Mobile Category menu"
+  },
+  {
+    "id": "75",
+    "taxonomy": "",
+    "slug": "mobile-navigation",
+    "parent": "",
+    "name": "Mobile navigation"
+  }
+]

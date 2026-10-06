@@ -1,0 +1,17 @@
+{
+  "name": "old-data-website",
+  "version": "1.0.0",
+  "description": "Local frontend and data export for Waqf Ehsan WordPress archive",
+  "main": "app.js",
+  "scripts": {
+    "export": "node export-all.js",
+    "catalog": "node build-catalog.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

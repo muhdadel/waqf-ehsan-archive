@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-10-06T17:08:34.257Z",
+  "source": "WordPress.2026-10-06.xml",
+  "site": {
+    "title": "وقف إحسان",
+    "url": "https://waqfehsan.org.sa",
+    "language": "ar",
+    "exportedAt": "2026-10-06",
+    "wxrVersion": "1.2"
+  },
+  "counts": {
+    "items": 616,
+    "products": 44,
+    "variations": 112,
+    "posts": 32,
+    "pages": 34,
+    "attachments": 342,
+    "attachmentsLocal": 342,
+    "authors": 6,
+    "coupons": 3,
+    "terms": 119,
+    "otherItems": 49,
+    "productSalesCountersSum": 31337
+  },
+  "downloadSummary": {
+    "exists": 653,
+    "http_404": 54,
+    "downloaded": 247
+  },
+  "folders": {
+    "excel": "exports/excel",
+    "info": "exports/info",
+    "json": "exports/json",
+    "media": "media/uploads",
+    "frontendCatalog": "data/catalog.js"
+  },
+  "missingFromExport": [
+    "shop orders",
+    "customer accounts",
+    "payment transactions"
+  ]
+}

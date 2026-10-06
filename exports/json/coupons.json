@@ -1,0 +1,35 @@
+[
+  {
+    "id": "26254",
+    "title": "test101",
+    "status": "publish",
+    "date": "2026-07-26 15:17:30",
+    "amount": "1000",
+    "discountType": "fixed_cart",
+    "usageCount": "0",
+    "expiry": "1785618000",
+    "description": ""
+  },
+  {
+    "id": "30684",
+    "title": "test202",
+    "status": "publish",
+    "date": "2026-08-18 11:52:11",
+    "amount": "100",
+    "discountType": "percent",
+    "usageCount": "0",
+    "expiry": "1787086800",
+    "description": ""
+  },
+  {
+    "id": "34887",
+    "title": "test304",
+    "status": "publish",
+    "date": "2026-09-25 10:52:35",
+    "amount": "100",
+    "discountType": "percent",
+    "usageCount": "0",
+    "expiry": "",
+    "description": ""
+  }
+]

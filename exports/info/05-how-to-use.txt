@@ -1,0 +1,21 @@
+How to use this package
+=======================
+
+1. Browse the website:
+   open index.html
+
+2. Open Excel data:
+   exports/excel/*.xlsx
+
+3. Read explanations:
+   exports/info/*.txt
+
+4. Re-run full export + media download:
+   node export-all.js
+
+5. Rebuild frontend catalog only:
+   node build-catalog.js
+
+Notes:
+- Frontend prefers local media paths when the file exists under media/uploads.
+- If a local file is missing, the remote URL is used as fallback.

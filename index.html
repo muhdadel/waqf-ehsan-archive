@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>وقف إحسان — دليل المشاريع</title>
+  <meta name="description" content="عرض مرتب لبيانات موقع وقف إحسان: مشاريع الصدقة، الأسعار، والخيارات، والمقالات." />
+  <link rel="icon" href="https://waqfehsan.org.sa/wp-content/uploads/2025/09/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#app">تخطي إلى المحتوى</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/">
+        <img src="https://waqfehsan.org.sa/wp-content/uploads/2025/09/logo.png" alt="" width="86" height="54" />
+        <span>
+          <strong>وقف إحسان</strong>
+          <small>دليل بيانات الموقع</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">القائمة</button>
+      <nav id="site-nav" aria-label="أقسام الدليل">
+        <a href="#/" data-nav="home">الرئيسية</a>
+        <a href="#/projects" data-nav="projects">المشاريع</a>
+        <a href="#/articles" data-nav="articles">المقالات</a>
+        <a href="#/about" data-nav="about">عن الوقف</a>
+      </nav>
+      <form class="search" role="search">
+        <label class="sr-only" for="q">بحث</label>
+        <input id="q" type="search" name="q" placeholder="ابحث في المشاريع والمقالات" />
+        <button type="submit">بحث</button>
+      </form>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>وقف إحسان</strong>
+        <p>واجهة للقراءة فقط، مبنية من تصدير الموقع بتاريخ 6 أكتوبر 2026. لا يُنشأ من هنا طلب ولا يتم دفع.</p>
+      </div>
+      <a href="https://waqfehsan.org.sa" target="_blank" rel="noopener">الموقع الأصلي</a>
+    </div>
+  </footer>
+  <script src="data/catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Content Info
+============
+
+Posts (articles): 32
+Pages: 34
+Coupons: 3
+Other WordPress items (menus, Elementor, theme parts, etc.): 49
+
+Useful pages include about/governance/licenses/contact content.
+Many pages are theme/WooCommerce utility pages and were kept in Excel
+even if the frontend catalog shows only the cleaned Arabic pages.
+
+Excel:
+- exports/excel/04-posts.xlsx
+- exports/excel/05-pages.xlsx
+- exports/excel/08-coupons.xlsx
+- exports/excel/09-other-content.xlsx

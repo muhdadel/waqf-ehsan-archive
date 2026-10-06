@@ -1,0 +1,22 @@
+Orders & Users Info
+===================
+
+Orders: NOT available in this export.
+Shop customers: NOT available in this export.
+
+What exists instead:
+- Product total_sales counters on 44 products
+- Combined counter total: 31337
+- 6 WordPress authors/editors (site staff accounts)
+
+To get real orders/customers you need:
+- a WooCommerce orders export, or
+- database dump / WooCommerce analytics export from the old host
+
+Staff authors found in XML:
+- ahmed66106610@gmail.com <ahmed66106610@gmail.com>
+- nha <nhamhmd509@gmail.com>
+- emayada <emayada219@gmail.com>
+- Mohamedyouinse <Mohamedyouinse@gmail.com>
+- khaled <kharboushmohamed99@gmail.com>
+- waqfehsan <info@waqfehsan.org.sa>

@@ -1,0 +1,39 @@
+Products Info
+=============
+
+Source: WooCommerce products inside the WordPress XML export.
+
+Count: 44
+Published: 42
+Draft: 2
+Variable products: 23
+Simple products: 21
+
+Fields available:
+- title, status, type (simple/variable)
+- price / regular price
+- stock status
+- total_sales (order count counter only)
+- categories and visibility flags
+- excerpt and cleaned content text
+- thumbnail/gallery references + local media path when downloaded
+
+Excel: exports/excel/01-products.xlsx
+JSON:  exports/json/products.json
+
+Top products by total_sales:
+1. اسقِ ضيوف الرحمن في الحرم — 7919
+2. سقيا حاج بريال — 7623
+3. سقيا إحسان بعشرة ذي الحجة — 3843
+4. وجبة افطار صائم — 1870
+5. وجبة حاج — 1761
+6. أهدِ مصحفًا لمعتمر في الحرم — 1225
+7. سقيا عرفة للحجاج — 1103
+8. أوقف أرضا — 821
+9. أوقف وجبة وعبوة في الحرم مدى الحياة — 733
+10. أجورك الخمسة — 695
+11. 10 وجبات بالعشر الأواخر - في كل ليلة نوزع عنك وجبة — 519
+12. سقيا عرفة للحجاج . — 515
+13. يوم ب100 ألف يوم (إفطار صائمي الحرم المكي) — 479
+14. وجبة إفطار صائم بالعشر الأواخر من رمضان — 414
+15. احجز وجبة في إفطار عاشوراء بالحرم المكي — 292
