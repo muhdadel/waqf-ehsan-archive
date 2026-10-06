@@ -2,6 +2,11 @@
 
 واجهة أمامية للقراءة فقط، مبنية من تصدير ووردبريس لموقع [وقف إحسان](https://waqfehsan.org.sa).
 
+## الروابط
+
+- المستودع: https://github.com/muhdadel/waqf-ehsan-archive
+- الموقع المنشور: https://muhdadel.github.io/waqf-ehsan-archive/
+
 ## المحتوى
 
 - تصفح المشاريع والأسعار والخيارات
