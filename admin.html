@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>لوحة الإدارة — وقف إحسان</title>
+  <title>تسجيل الدخول — لوحة الإدارة</title>
   <link rel="icon" href="https://waqfehsan.org.sa/wp-content/uploads/2025/09/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="admin.css" />
 </head>
-<body>
-  <div id="login-view" class="login-wrap">
+<body data-page="login">
+  <div class="login-wrap">
     <form class="login-card" id="login-form">
       <img src="https://waqfehsan.org.sa/wp-content/uploads/2025/09/logo.png" alt="" width="96" height="60" />
       <h1>لوحة الإدارة</h1>
-      <p>عرض الطلبات والعملاء من بيانات المتجر المحفوظة محلياً</p>
+      <p>سجّل الدخول للانتقال إلى الطلبات والعملاء</p>
       <label>اسم المستخدم
         <input id="username" name="username" autocomplete="username" required />
       </label>
@@ -27,36 +27,6 @@
       <a class="back" href="index.html">العودة للموقع</a>
     </form>
   </div>
-
-  <div id="app-view" hidden>
-    <header class="admin-header">
-      <div class="header-bar">
-        <div class="brand">
-          <strong>وقف إحسان</strong>
-          <span>لوحة الطلبات والعملاء</span>
-        </div>
-        <nav class="tabs" aria-label="أقسام اللوحة">
-          <button type="button" data-tab="dashboard" class="is-on">لوحة عامة</button>
-          <button type="button" data-tab="orders">الطلبات</button>
-          <button type="button" data-tab="customers">العملاء</button>
-        </nav>
-        <div class="header-actions">
-          <a href="index.html">الموقع</a>
-          <button type="button" id="logout">خروج</button>
-        </div>
-      </div>
-    </header>
-    <main id="admin-main" class="admin-main"></main>
-  </div>
-
-  <dialog id="detail-dialog">
-    <div class="dialog-head">
-      <h2 id="detail-title">التفاصيل</h2>
-      <button type="button" id="detail-close" aria-label="إغلاق">×</button>
-    </div>
-    <div id="detail-body" class="dialog-body"></div>
-  </dialog>
-
   <script src="admin.js"></script>
 </body>
 </html>

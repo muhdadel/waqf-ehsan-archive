@@ -9,7 +9,8 @@
 - لوحة الإدارة: https://muhdadel.github.io/waqf-ehsan-archive/admin.html
 
 ### لوحة الإدارة
-- الرابط: https://muhdadel.github.io/waqf-ehsan-archive/admin.html
+- تسجيل الدخول: https://muhdadel.github.io/waqf-ehsan-archive/admin.html
+- بعد الدخول يتم التحويل إلى: `admin-panel.html`
 - المستخدم: `admin`
 - كلمة المرور: `WaqfEhsan@Admin2026`
 

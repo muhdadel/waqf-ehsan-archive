@@ -10,15 +10,17 @@ const ADMIN_USER = "admin";
 const ADMIN_PASS = "WaqfEhsan@Admin2026";
 const SESSION_KEY = "waqf_admin_session_v1";
 const PAGE_SIZE = 25;
+const LOGIN_PAGE = "admin.html";
+const PANEL_PAGE = "admin-panel.html";
 
-const loginView = document.querySelector("#login-view");
-const appView = document.querySelector("#app-view");
+const pageMode = document.body.dataset.page || "login";
 const loginForm = document.querySelector("#login-form");
 const loginError = document.querySelector("#login-error");
 const main = document.querySelector("#admin-main");
 const dialog = document.querySelector("#detail-dialog");
 const detailTitle = document.querySelector("#detail-title");
 const detailBody = document.querySelector("#detail-body");
+const logoutBtn = document.querySelector("#logout");
 
 let data = null;
 let tab = "dashboard";
@@ -115,27 +117,29 @@ function statusLabel(status) {
 }
 
 async function loadData() {
-  main.innerHTML = `<div class="loading">جاري تحميل بيانات الطلبات والعملاء...</div>`;
+  if (main) main.innerHTML = `<div class="loading">جاري تحميل بيانات الطلبات والعملاء...</div>`;
   const res = await fetch("data/admin/admin-data.json", { cache: "no-store" });
   if (!res.ok) {
     throw new Error(
-      "تعذر تحميل data/admin/admin-data.json. شغّل محلياً: node build-admin-data.js ثم افتح الموقع عبر خادم محلي."
+      "تعذر تحميل data/admin/admin-data.json. تأكد أن الملف منشور مع الموقع ثم أعد المحاولة."
     );
   }
   data = await res.json();
 }
 
-function showApp() {
-  loginView.hidden = true;
-  appView.hidden = false;
-  render();
+function goLogin(message) {
+  if (message) sessionStorage.setItem("waqf_admin_login_error", message);
+  location.href = LOGIN_PAGE;
 }
 
-function showLogin(message = "") {
-  appView.hidden = true;
-  loginView.hidden = false;
+function goPanel() {
+  location.href = PANEL_PAGE;
+}
+
+function showLoginError(message = "") {
+  if (!loginError) return;
   loginError.hidden = !message;
-  loginError.textContent = message;
+  loginError.textContent = message || "";
 }
 
 function paymentOptions() {
@@ -522,128 +526,144 @@ function openCustomer(id) {
   dialog.showModal();
 }
 
-loginForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const username = document.querySelector("#username").value.trim();
-  const password = document.querySelector("#password").value;
-  if (username !== ADMIN_USER || password !== ADMIN_PASS) {
-    showLogin("بيانات الدخول غير صحيحة");
-    return;
+function bindPanelEvents() {
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      setSession(false);
+      data = null;
+      goLogin();
+    });
   }
-  setSession(true);
-  try {
-    await loadData();
-    showApp();
-  } catch (e) {
-    setSession(false);
-    showLogin(e.message || "تعذر تحميل البيانات");
-  }
-});
 
-document.querySelector("#logout").addEventListener("click", () => {
-  setSession(false);
-  data = null;
-  showLogin();
-});
-
-document.querySelectorAll(".tabs button").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    tab = btn.dataset.tab;
-    orderPage = 1;
-    customerPage = 1;
-    render();
+  document.querySelectorAll(".tabs button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tab = btn.dataset.tab;
+      orderPage = 1;
+      customerPage = 1;
+      render();
+    });
   });
-});
 
-document.querySelector("#detail-close").addEventListener("click", () => dialog.close());
-dialog.addEventListener("click", (event) => {
-  if (event.target === dialog) dialog.close();
-});
+  const detailClose = document.querySelector("#detail-close");
+  if (detailClose) detailClose.addEventListener("click", () => dialog.close());
+  if (dialog) {
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+  }
 
-main.addEventListener("click", (event) => {
-  const orderBtn = event.target.closest("[data-order]");
-  if (orderBtn) {
-    openOrder(orderBtn.dataset.order);
-    return;
-  }
-  const customerBtn = event.target.closest("[data-customer]");
-  if (customerBtn) {
-    openCustomer(customerBtn.dataset.customer);
-    return;
-  }
-  const opage = event.target.closest("[data-opage]");
-  if (opage && !opage.disabled) {
-    orderPage = Number(opage.dataset.opage);
-    renderOrders();
-    return;
-  }
-  const cpage = event.target.closest("[data-cpage]");
-  if (cpage && !cpage.disabled) {
-    customerPage = Number(cpage.dataset.cpage);
-    renderCustomers();
-  }
-  if (event.target.id === "reset-orders") {
-    orderFilters = { q: "", status: "", payment: "", from: "", to: "", minTotal: "", maxTotal: "" };
-    orderPage = 1;
-    renderOrders();
-  }
-  if (event.target.id === "reset-customers") {
-    customerFilters = { q: "", paying: "", minOrders: "", minSpent: "" };
-    customerPage = 1;
-    renderCustomers();
-  }
-});
+  main.addEventListener("click", (event) => {
+    const orderBtn = event.target.closest("[data-order]");
+    if (orderBtn) {
+      openOrder(orderBtn.dataset.order);
+      return;
+    }
+    const customerBtn = event.target.closest("[data-customer]");
+    if (customerBtn) {
+      openCustomer(customerBtn.dataset.customer);
+      return;
+    }
+    const opage = event.target.closest("[data-opage]");
+    if (opage && !opage.disabled) {
+      orderPage = Number(opage.dataset.opage);
+      renderOrders();
+      return;
+    }
+    const cpage = event.target.closest("[data-cpage]");
+    if (cpage && !cpage.disabled) {
+      customerPage = Number(cpage.dataset.cpage);
+      renderCustomers();
+    }
+    if (event.target.id === "reset-orders") {
+      orderFilters = { q: "", status: "", payment: "", from: "", to: "", minTotal: "", maxTotal: "" };
+      orderPage = 1;
+      renderOrders();
+    }
+    if (event.target.id === "reset-customers") {
+      customerFilters = { q: "", paying: "", minOrders: "", minSpent: "" };
+      customerPage = 1;
+      renderCustomers();
+    }
+  });
 
-detailBody.addEventListener("click", (event) => {
-  const orderBtn = event.target.closest("[data-order]");
-  if (orderBtn) openOrder(orderBtn.dataset.order);
-});
+  if (detailBody) {
+    detailBody.addEventListener("click", (event) => {
+      const orderBtn = event.target.closest("[data-order]");
+      if (orderBtn) openOrder(orderBtn.dataset.order);
+    });
+  }
 
-main.addEventListener("change", (event) => {
-  const of = event.target.closest("[data-of]");
-  if (of) {
-    orderFilters[of.dataset.of] = of.value;
-    orderPage = 1;
-    renderOrders();
-    return;
-  }
-  const cf = event.target.closest("[data-cf]");
-  if (cf) {
-    customerFilters[cf.dataset.cf] = cf.value;
-    customerPage = 1;
-    renderCustomers();
-  }
-});
+  main.addEventListener("change", (event) => {
+    const of = event.target.closest("[data-of]");
+    if (of) {
+      orderFilters[of.dataset.of] = of.value;
+      orderPage = 1;
+      renderOrders();
+      return;
+    }
+    const cf = event.target.closest("[data-cf]");
+    if (cf) {
+      customerFilters[cf.dataset.cf] = cf.value;
+      customerPage = 1;
+      renderCustomers();
+    }
+  });
 
-main.addEventListener("input", (event) => {
-  const of = event.target.closest("[data-of='q']");
-  if (of) {
-    orderFilters.q = of.value;
-    orderPage = 1;
-    // debounce lightly via rAF batching
-    clearTimeout(main._qTimer);
-    main._qTimer = setTimeout(() => renderOrders(true), 200);
-    return;
-  }
-  const cf = event.target.closest("[data-cf='q']");
-  if (cf) {
-    customerFilters.q = cf.value;
-    customerPage = 1;
-    clearTimeout(main._cqTimer);
-    main._cqTimer = setTimeout(() => renderCustomers(true), 200);
-  }
-});
+  main.addEventListener("input", (event) => {
+    const of = event.target.closest("[data-of='q']");
+    if (of) {
+      orderFilters.q = of.value;
+      orderPage = 1;
+      clearTimeout(main._qTimer);
+      main._qTimer = setTimeout(() => renderOrders(true), 200);
+      return;
+    }
+    const cf = event.target.closest("[data-cf='q']");
+    if (cf) {
+      customerFilters.q = cf.value;
+      customerPage = 1;
+      clearTimeout(main._cqTimer);
+      main._cqTimer = setTimeout(() => renderCustomers(true), 200);
+    }
+  });
+}
 
 (async function boot() {
-  if (!isLoggedIn()) {
-    showLogin();
+  if (pageMode === "login") {
+    const savedError = sessionStorage.getItem("waqf_admin_login_error");
+    if (savedError) {
+      sessionStorage.removeItem("waqf_admin_login_error");
+      showLoginError(savedError);
+    }
+    if (isLoggedIn()) {
+      goPanel();
+      return;
+    }
+    loginForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const username = document.querySelector("#username").value.trim();
+      const password = document.querySelector("#password").value;
+      if (username !== ADMIN_USER || password !== ADMIN_PASS) {
+        showLoginError("بيانات الدخول غير صحيحة");
+        return;
+      }
+      setSession(true);
+      goPanel();
+    });
     return;
   }
+
+  // panel page
+  if (!isLoggedIn()) {
+    goLogin();
+    return;
+  }
+  bindPanelEvents();
   try {
     await loadData();
-    showApp();
+    render();
   } catch (e) {
     setSession(false);
-    showLogin(e.message || "تعذر تحميل البيانات");
+    goLogin(e.message || "تعذر تحميل البيانات");
   }
 })();

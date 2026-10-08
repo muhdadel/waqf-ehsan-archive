@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لوحة الطلبات والعملاء — وقف إحسان</title>
+  <link rel="icon" href="https://waqfehsan.org.sa/wp-content/uploads/2025/09/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body data-page="panel">
+  <header class="admin-header">
+    <div class="header-bar">
+      <div class="brand">
+        <strong>وقف إحسان</strong>
+        <span>لوحة الطلبات والعملاء</span>
+      </div>
+      <nav class="tabs" aria-label="أقسام اللوحة">
+        <button type="button" data-tab="dashboard" class="is-on">لوحة عامة</button>
+        <button type="button" data-tab="orders">الطلبات</button>
+        <button type="button" data-tab="customers">العملاء</button>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html">الموقع</a>
+        <button type="button" id="logout">خروج</button>
+      </div>
+    </div>
+  </header>
+  <main id="admin-main" class="admin-main">
+    <div class="loading">جاري التحقق من الجلسة وتحميل البيانات...</div>
+  </main>
+
+  <dialog id="detail-dialog">
+    <div class="dialog-head">
+      <h2 id="detail-title">التفاصيل</h2>
+      <button type="button" id="detail-close" aria-label="إغلاق">×</button>
+    </div>
+    <div id="detail-body" class="dialog-body"></div>
+  </dialog>
+
+  <script src="admin.js"></script>
+</body>
+</html>
