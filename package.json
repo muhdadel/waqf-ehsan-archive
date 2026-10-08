@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "export": "node export-all.js",
-    "catalog": "node build-catalog.js"
+    "catalog": "node build-catalog.js",
+    "admin-data": "node build-admin-data.js"
   },
   "keywords": [],
   "author": "",

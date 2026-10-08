@@ -21,5 +21,12 @@
 ابدأ من:
 exports/info/00-README.txt
 
+لوحة الإدارة
+-----------
+افتح: admin.html
+بيانات الدخول ثابتة داخل admin.js
+ابنِ بيانات اللوحة: npm run admin-data
+ملاحظة: مجلد data/admin خاص ولن يُرفع إلى GitHub العام.
+
 لإعادة التصدير والتنزيل:
 npm run export

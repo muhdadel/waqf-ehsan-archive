@@ -6,6 +6,14 @@
 
 - المستودع: https://github.com/muhdadel/waqf-ehsan-archive
 - الموقع المنشور: https://muhdadel.github.io/waqf-ehsan-archive/
+- لوحة الإدارة: https://muhdadel.github.io/waqf-ehsan-archive/admin.html
+
+### لوحة الإدارة
+1. ابنِ البيانات محلياً: `npm run admin-data`
+2. شغّل خادماً محلياً: `npx --yes serve .`
+3. افتح `/admin.html`
+
+بيانات الطلبات/العملاء (`data/admin/`) **لا تُرفع** إلى المستودع العام لأنها تحتوي معلومات شخصية.
 
 ## المحتوى
 

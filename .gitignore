@@ -1,3 +1,16 @@
 node_modules/
 *.part
 .DS_Store
+
+.secrets/
+
+# Live WooCommerce exports contain customer PII — keep private
+exports/woocommerce-raw/
+exports/json/woocommerce-*.json
+exports/excel/10-orders.xlsx
+exports/excel/11-order-items.xlsx
+exports/excel/12-customers.xlsx
+exports/info/06-woocommerce-live-info.txt
+
+# Customer/order admin dataset stays local (PII). Do not publish on a public repo.
+data/admin/
