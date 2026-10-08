@@ -9,11 +9,11 @@
 - لوحة الإدارة: https://muhdadel.github.io/waqf-ehsan-archive/admin.html
 
 ### لوحة الإدارة
-1. ابنِ البيانات محلياً: `npm run admin-data`
-2. شغّل خادماً محلياً: `npx --yes serve .`
-3. افتح `/admin.html`
+- الرابط: https://muhdadel.github.io/waqf-ehsan-archive/admin.html
+- المستخدم: `admin`
+- كلمة المرور: `WaqfEhsan@Admin2026`
 
-بيانات الطلبات/العملاء (`data/admin/`) **لا تُرفع** إلى المستودع العام لأنها تحتوي معلومات شخصية.
+> تحذير: المستودع عام، وملف `data/admin/admin-data.json` يمكن تنزيله مباشرة.
 
 ## المحتوى
 

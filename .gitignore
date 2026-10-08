@@ -12,5 +12,5 @@ exports/excel/11-order-items.xlsx
 exports/excel/12-customers.xlsx
 exports/info/06-woocommerce-live-info.txt
 
-# Customer/order admin dataset stays local (PII). Do not publish on a public repo.
-data/admin/
+# Raw WooCommerce dumps stay local (too large / full PII export).
+# Slim admin dataset in data/admin/ is published for the public admin panel.
